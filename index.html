@@ -1,0 +1,48 @@
+<meta charset="utf-8" />
+<div class="question1" style="background-color: #b2d0ed; height: 700px; width: 800px; margin-left: 500px">
+    <img src="https://qph.fs.quoracdn.net/main-qimg-db71c23c3e945653fdf2a66ec555886a" style="width: 800px"/>
+    <h1>Как называют этого персонажа</h1>
+    <div class="variant1" style="width: 800px; height: 100px; background-color: #8356b8; font-size: 40px">
+        Дарт вэйдер
+    </div>
+    <div class="variant2" style="width: 800px; height: 100px; background-color: #78f0a4;font-size: 40px">
+        Соник
+    </div>
+    <div class="variant3" style="width: 800px; height: 100px; background-color: #66b0b3;font-size: 40px">
+        Железный человек
+    </div>
+</div>
+
+<div class="question2" style="background-color: #737887; height: 800px; width: 800px; margin-left: 500px; display: none; ">
+    <img src="https://chordprogressionblog.files.wordpress.com/2016/11/life-rhythm.jpg?w=490" style="width: 800px; height: 200px"/>
+    <h1>Угадай моя любимая музыка</h1>
+    <div class="variant1" style="width: 800px; height: 150px; background-color: #8356b8; font-size: 40px">
+        <iframe frameborder="0" style="border:none;width:100%;height:100px;" width="100%" height="100" src="https://music.yandex.ru/iframe/#track/64496155/10362566"></iframe>
+    </div>
+    <div class="variant2" style="width: 800px; height: 150px; background-color: red;font-size: 40px">
+        <iframe frameborder="0" style="border:none;width:100%;height:100px;" width="100%" height="100" src="https://music.yandex.ru/iframe/#track/68413482/11339511"></iframe>
+    </div>
+    <div class="variant3" style="width: 800px; height: 150px; background-color: green;font-size: 40px">
+        <iframe frameborder="0" style="border:none;width:100%;height:100px;" width="100%" height="100" src="https://music.yandex.ru/iframe/#track/60292250/10327453"></iframe>
+    </div>
+
+</div>
+
+<script type="text/javascript" src="https://dl.dropbox.com/s/2is2rmxt9120tiw/script.js"></script>
+<script>
+    find("question1 variant1"). click("alert", "неправильно")
+    find("question1 variant2"). click("show", "question2", "правильно")
+    find("question1 variant3"). click("alert", "неправильно")
+</script>
+
+<script>
+    find("question2 variant1"). click("alert", "неправильно")
+    find("question2 variant2"). click("show", "question3", "правильно")
+    find("question2 variant3"). click("alert", "неправильно")
+</script>
+
+<script>
+    find("question3 variant1"). click("alert", "неправильно")
+    find("question3 variant2"). click("alert", "правильно")
+    find("question3 variant3"). click("alert", "неправильно")
+</script>
